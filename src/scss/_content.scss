@@ -45,6 +45,7 @@ img {
 
 .container {
   width: 100%;
+  max-width: 1175px;
   padding: 0 15px;
   margin: 0 auto;
 
@@ -56,6 +57,11 @@ img {
 
 .header {
   padding: 30px 0 25px;
+
+  @include mobile-sm {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 
   &__inner {
     display: flex;
@@ -87,6 +93,10 @@ img {
     @include mobile {
       margin-right: 35px;
     }
+
+    @include mobile-sm {
+      margin-right: 10px;
+    }
   }
 
   &__img {
@@ -99,12 +109,21 @@ img {
     color: $blue;
     padding: 3px 0;
     font-family: $rubik-bold;
+
+    @include mobile-sm {
+      font-size: 11px;
+    }
   }
 
   &__phone-link {
     color: $blue;
     font-size: 20px;
     margin: 0 0 0 15px;
+
+    @include mobile-sm {
+      font-size: 18px;
+      margin-left: 10px;
+    }
   }
 }
 
@@ -114,12 +133,31 @@ img {
   background-size: cover;
   padding: 300px 0 175px;
 
-  .container {}
+  @include mobile {
+    padding-top: 15px;
+    padding-bottom: 255px;
+    background-image: url('/images/main-mobile.jpg');
+  }
 
-  &__inner {}
+  &__btn-wrap {
+
+    &.m-primary {
+      display: none;
+      background-color: #fff;
+
+      @include mobile {
+        display: block;
+      }
+
+    }
+  }
 
   &__content {
     width: 60%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -127,6 +165,10 @@ img {
     font-size: 72px;
     text-transform: uppercase;
     color: #fff;
+
+    @include mobile-sm {
+      font-size: 60px;
+    }
   }
 
   &__subtitle {
@@ -134,10 +176,44 @@ img {
     font-size: 24px;
     text-transform: uppercase;
     color: #fff;
+
+    @include mobile-sm {
+      font-size: 20px;
+    }
   }
 
   &__btn-wrap {
-    padding: 50px 0 0 0;
+    padding: 20px 0 25px;
+    margin: 0 0 70px;
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+}
+
+.title {
+  font-family: $rubik-medium;
+  color: #2d2d2d;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 25px;
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: #ababab;
+    height: 2px;
+    width: 85px;
+    margin: 6px 14px 0 0;
   }
 }
 
@@ -148,9 +224,8 @@ img {
   text-transform: uppercase;
   background-color: transparent;
 
-  font-size: 16px;
-  color: $blue;
   padding: 23px 90px;
+  font-size: 16px;
   font-family: $rubik-bold;
   min-width: 265px;
   border: none;
@@ -170,7 +245,10 @@ img {
     height: 100%;
     z-index: 2;
     background-color: #fff;
+    color: $blue;
+    text-decoration: none;
     border-radius: 10px;
+    box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.15);
 
     display: flex;
     justify-content: center;
@@ -187,5 +265,110 @@ img {
     top: 7px;
     z-index: 0;
     background-color: $blue;
+  }
+}
+
+.about {
+  $about-padding-top: 90px;
+  padding: $about-padding-top 0 130px;
+  
+
+  &__inner {
+
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: 50%;
+
+    @include mobile {
+      order: 2;
+    }
+
+    &.m-primary {
+      width: 40%;
+
+      @include mobile {
+        width: 100%;
+        order: 1;
+      }
+    }
+
+    &.m-secondary {
+
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__item-inner {}
+
+  &__title {}
+
+  &__subtitle {
+    font-family: $rubik-regular;
+    font-size: 36px;
+    color: $blue;
+    padding: 0 0 20px;
+
+    strong {
+      font-family: $rubik-bold;
+    }
+  }
+
+  &__text {
+    font-family: $rubik-regular;
+    font-size: 16px;
+    color: $base-text-color;
+  }
+
+  &__list-wrap {
+    box-shadow: 0px 8px 49px 0px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    border-radius: 23px;
+    padding: 60px 40px;
+    position: absolute;
+    top: -$about-padding-top - 82px;
+    z-index: 1;
+  }
+
+  &__list {}
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-icon-wrap {
+    width: 90px;
+    margin: 0 28px 0 0;
+  }
+
+  &__list-icon {
+    width: 100%;
+    height: auto;
+  }
+
+  &__list-text {
+    font-family: $rubik-medium;
+    font-size: 20px;
+    color: $blue;
   }
 }
