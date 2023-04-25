@@ -396,6 +396,10 @@ img {
 
 
 .services {
+  @include tablet {
+    padding-bottom: 95px;
+  }
+
   &__row {
     margin: 45px -15px 125px;
     display: flex;
@@ -403,6 +407,7 @@ img {
 
     @include tablet {
       flex-wrap: wrap;
+      margin-bottom: 0;
     }
   }
 
@@ -415,7 +420,7 @@ img {
 
     @include tablet {
       width: 50%;
-      height: 260px;
+      // height: 260px;
     }
 
     @include mobile-sm {
@@ -502,9 +507,203 @@ img {
       min-width: 90%;
     }
   }
+}
 
-  &__btn-inner {
-    // padding-left: 10px;
-    // padding-right: 10px;
+.booking {
+  background-color: $blue-dark;
+  padding: 80px 0 90px;
+  overflow: hidden;
+
+  @include tablet {
+    padding-top: 95px;
+    padding-bottom: 100px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-family: $rubik-bold;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-family: $rubik-medium;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    width: 40%;
+    text-align: center;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 55px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__contacts-title {
+    font-family: $rubik-regular;
+    color: #fff;
+    font-size: 20px;
+    padding-right: 30px;
+
+    strong {
+      font-family: $rubik-bold;
+    }
+
+    @include tablet {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__contacts-link {
+    font-family: $rubik-bold;
+    color: #fff;
+    font-size: 36px;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+
+    @include tablet {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__form-wrap {
+    margin: 0 95px;
+
+    @include tablet {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__form {
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 35px 10px 39px;
+    box-shadow: 0px 11px 16px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &__form-title {
+    font-family: $rubik-bold;
+    color: $blue;
+    font-size: 20px;
+    padding: 0 0 27px;
+    text-align: center;
+
+    @include tablet {
+      padding-bottom: 45px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__form-item {
+    margin: 0 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    &.m-primary {
+      display: flex;
+      justify-content: flex-start;
+
+      &:before {
+        content: '+45';
+        display: block;
+        font-family: $rubik-bold;
+        color: $blue;
+        font-size: 20px;
+        padding-right: 15px;
+      }
+
+      @include tablet {
+        justify-content: center;
+        padding-bottom: 45px;
+      }
+    }
+
+    @include tablet {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    font-family: $rubik-bold;
+    color: #2d2d2d;
+    font-size: 20px;
+    letter-spacing: 5px;
+    width: 185px;
+  }
+
+  &__btn {
+
+    @include tablet {
+      width: 155px;
+      min-width: 155px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: $rubik-bold;
+    color: #fff;
+    font-size: 200px;
+    text-transform: uppercase;
+    opacity: 0.2;
+    z-index: 0;
+    line-height: 1;
+
+    @include tablet {
+      top: -45px;
+    }
   }
 }
