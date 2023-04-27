@@ -11,7 +11,37 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = () => {
   // IIFE code wrapping
   (() => {
-    // $('.js-projects-slider').slick();
+
+    $(".js-slider-feedback").on("init", function (event, slick) {
+      const $count = `<div class="slider__current">${parseInt(slick.currentSlide + 1)}</div>/${slick.slideCount}`;
+      $(".js-arrow-count").html($count);
+    });
+
+    $(".js-slider-feedback").on("afterChange", function (event, slick) {
+      const $count = `<div class="slider__current">${parseInt(slick.currentSlide + 1)}</div>/${slick.slideCount}`;
+      $(".js-arrow-count").html($count);
+    });
+
+    $('.js-slider-feedback').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ],
+      prevArrow: $('.js-arrow-prev'),
+      nextArrow: $('.js-arrow-next')
+    });
+
 
 
     // let $slickElements = $('.js-projects-slider');
