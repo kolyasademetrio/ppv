@@ -12,59 +12,43 @@ window.onload = () => {
   // IIFE code wrapping
   (() => {
 
-    $(".js-slider-feedback").on("init", function (event, slick) {
-      const $count = `<div class="slider__current">${parseInt(slick.currentSlide + 1)}</div>/${slick.slideCount}`;
-      $(".js-arrow-count").html($count);
-    });
+    let $slickElements = $('.js-slider');
 
-    $(".js-slider-feedback").on("afterChange", function (event, slick) {
-      const $count = `<div class="slider__current">${parseInt(slick.currentSlide + 1)}</div>/${slick.slideCount}`;
-      $(".js-arrow-count").html($count);
-    });
+    $slickElements.each((index, elem) => {
 
-    $('.js-slider-feedback').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      responsive: [{
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
+      const $status = $(elem).closest('.js-slider-wrapper').find(".js-arrow-count");
+
+      $(elem).on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+
+        const $count = `<div class="slider__current">${parseInt(slick.currentSlide + 1)}</div>/${slick.slideCount}`;
+
+        $status.html($count);
+      });
+
+      let prev = $(elem).closest('.js-slider-wrapper').find('.js-arrow-prev');
+      let next = $(elem).closest('.js-slider-wrapper').find('.js-arrow-next');
+
+      $(elem).slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            }
           }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ],
-      prevArrow: $('.js-arrow-prev'),
-      nextArrow: $('.js-arrow-next')
+        ],
+        nextArrow: next,
+        prevArrow: prev,
+      });
+
     });
-
-
-
-    // let $slickElements = $('.js-projects-slider');
-
-    // $slickElements.each((index, elem) => {
-    //   let $status = $(elem).next().find('.js-projects-slider-qty');
-    //   $(elem).on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-    //     //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-    //     let i = (currentSlide ? currentSlide : 0) + 1;
-    //     $status.html(i + '/<span class="projects__slider-qty_sm">' + slick.slideCount + '</span>');
-    //   });
-
-    //   let prev = $(elem).next().find('.js-projects-slider-arrow-prev');
-    //   let next = $(elem).next().find('.js-projects-slider-arrow-next');
-
-    //   $(elem).slick({
-    //     autoplay: false,
-    //     dots: false,
-    //     nextArrow: next,
-    //     prevArrow: prev,
-    //   });
-
-    // });
 
 
 
