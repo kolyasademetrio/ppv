@@ -1087,3 +1087,71 @@ img {
     display: block;
   }
 }
+
+.desktop {
+  display: flex;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.regular {
+  font-family: $rubik-regular;
+}
+
+.blue {
+  color: $blue;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.no-wrap {
+  @media (max-width: 991px) {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.mb-0 {
+  @media (max-width: 991px) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.ml-a {
+  @media (max-width: 991px) {
+    margin-left: auto !important;
+  }
+}
+
+.mr-a {
+  @media (max-width: 991px) {
+    margin-right: auto !important;
+  }
+}
+
+.fxg2 {
+  @media (max-width: 991px) {
+    flex-grow: 2 !important;
+  }
+}
+
+.pb-5 {
+  @media (max-width: 991px) {
+    padding-bottom: 5px !important;
+  }
+}
