@@ -1160,6 +1160,117 @@ button {
   }
 }
 
+.advantages {
+  padding: 40px 0 50px;
+
+  &__inner {}
+
+  &__content {}
+
+  &__row {}
+
+  &__title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {}
+
+  &__subtitle {
+    padding: 0 0 50px;
+  }
+
+  &__list-wrapper {}
+
+  &__list {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    padding: 0 15px 55px;
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-bottom: 45px;
+    }
+  }
+
+  &__list-item-inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__list-item-icon {
+    background-color: #296fad;
+    border-radius: 50%;
+    width: 115px;
+    min-width: 115px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: $rubik-bold;
+    font-size: 36px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      content: attr(data-content);
+      display: block;
+      position: absolute;
+      color: #fff;
+      font-family: $rubik-bold;
+      font-size: 120px;
+      left: 31px;
+      top: -12px;
+      opacity: 0.1;
+      line-height: 1;
+    }
+
+    &-inner {
+      position: relative;
+      left: 5px;
+    }
+  }
+
+  &__list-item-title-wrap {
+    padding: 35px 0 0 18px;
+  }
+
+  &__list-item-title {
+    text-transform: uppercase;
+    color: $blue;
+    font-size: 20px;
+    font-family: $rubik-bold;
+    padding: 0 0 2px;
+  }
+
+  &__list-item-subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $base-text-color;
+    font-family: $rubik-medium;
+    padding: 0 0 5px;
+  }
+
+  &__list-item-descr {
+    font-size: 14px;
+    color: $base-text-color;
+    font-family: $rubik-regular;
+  }
+}
+
+
 .mobile {
   display: none;
 
