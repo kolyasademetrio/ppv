@@ -553,7 +553,7 @@ button {
   color: #328cda;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .services {
     padding-bottom: 95px;
   }
@@ -567,7 +567,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .services__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -585,7 +585,7 @@ button {
           justify-content: space-between;
   height: 320px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .services__row-item {
     width: 50%;
   }
@@ -673,7 +673,7 @@ button {
   width: 196px;
   min-width: 196px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .services__btn {
     width: 90%;
     min-width: 90%;
@@ -685,7 +685,12 @@ button {
   padding: 80px 0 90px;
   overflow: hidden;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .booking.m-secondary {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
   .booking {
     padding-top: 95px;
     padding-bottom: 100px;
@@ -715,7 +720,7 @@ button {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__title {
     text-align: center;
   }
@@ -729,7 +734,7 @@ button {
   width: 40%;
   text-align: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__subtitle {
     width: 100%;
   }
@@ -746,7 +751,7 @@ button {
           align-items: center;
   padding-bottom: 55px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__contacts {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -761,7 +766,7 @@ button {
 .booking__contacts-title strong {
   font-family: "rubik-bold", sans-serif;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__contacts-title {
     width: 100%;
     text-align: center;
@@ -775,7 +780,7 @@ button {
   white-space: nowrap;
   display: block;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__contacts-link {
     width: 100%;
     text-align: center;
@@ -784,7 +789,7 @@ button {
 .booking__form-wrap {
   margin: 0 95px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__form-wrap {
     margin-left: 0;
     margin-right: 0;
@@ -804,7 +809,7 @@ button {
   padding: 0 0 27px;
   text-align: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__form-title {
     padding-bottom: 45px;
     padding-right: 10px;
@@ -822,7 +827,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__form-row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -852,7 +857,7 @@ button {
   font-size: 20px;
   padding-right: 15px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__form-item.m-primary {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -860,7 +865,7 @@ button {
     padding-bottom: 45px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__form-item {
     width: 100%;
     display: -webkit-box;
@@ -880,7 +885,7 @@ button {
   letter-spacing: 5px;
   width: 185px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__btn {
     width: 155px;
     min-width: 155px;
@@ -903,7 +908,7 @@ button {
   z-index: 0;
   line-height: 1;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .booking__bg {
     top: -45px;
   }
@@ -932,7 +937,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-inner {
     margin-left: -5px;
     margin-right: -5px;
@@ -946,7 +951,7 @@ button {
           flex-grow: 1;
   width: 33.3333%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item {
     padding-left: 5px;
     padding-right: 5px;
@@ -967,7 +972,7 @@ button {
           justify-content: center;
   padding: 15px 15px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item-i.m-secondary, .price__row-item-i.m-tertiary {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -987,7 +992,7 @@ button {
   text-align: center;
   padding-top: 0;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item-i {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1017,7 +1022,7 @@ button {
   color: #000;
   padding-top: 10px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item-title {
     margin-top: auto;
     padding-bottom: 15px;
@@ -1032,12 +1037,12 @@ button {
   font-family: "rubik-regular", sans-serif;
   font-size: 20px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .price__row-item-title-top {
     font-size: 18px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item-title-top {
     text-align: center;
     font-size: 16px;
@@ -1047,7 +1052,7 @@ button {
   font-family: "rubik-regular", sans-serif;
   font-size: 14px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item-title-bottom {
     text-align: center;
     font-size: 13px;
@@ -1059,13 +1064,13 @@ button {
   color: #328cda;
   padding: 0 0 0 35px;
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .price__row-item-price {
     font-size: 26px;
     padding-left: 20px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .price__row-item-price {
     text-align: center;
     padding-left: 0;
@@ -1088,7 +1093,7 @@ button {
   padding: 85px 0 0;
   overflow: hidden;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .feedback {
     padding-top: 105px;
   }
@@ -1112,7 +1117,7 @@ button {
   background-color: #328cda;
   border-top-right-radius: 20px;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .feedback__bg-wrap:before {
     right: auto;
     width: 80px;
@@ -1132,12 +1137,12 @@ button {
     left: 0;
   }
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .feedback__bg {
     left: -50px;
   }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .feedback__bg {
     display: none;
   }
@@ -1149,7 +1154,7 @@ button {
 .feedback__title-wrap {
   padding: 0 0 25px 200px;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .feedback__title-wrap {
     padding-left: 100px;
     padding-bottom: 40px;
@@ -1162,7 +1167,7 @@ button {
   padding: 50px 0 0 260px;
   position: relative;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .feedback__row {
     padding-left: 0;
     padding-top: 0;
@@ -1172,7 +1177,7 @@ button {
 .feedback__slider-wrapper {
   position: relative;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .feedback__slider-wrapper {
     padding-bottom: 50px !important;
   }
@@ -1270,7 +1275,7 @@ button {
   position: relative;
   height: 736px;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .gallery__slider-item-inner {
     height: 590px;
   }
@@ -1313,14 +1318,14 @@ button {
   background: -o-linear-gradient(left, #328cda 0%, transparent 100%);
   background: linear-gradient(to right, #328cda 0%, transparent 100%);
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .gallery__slider-item-title-wrap {
     font-size: 18px;
     padding-left: 15px;
     padding-right: 10px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .gallery__slider-item-title-wrap {
     font-size: 20px;
   }
@@ -1409,7 +1414,7 @@ button {
   padding: 0 15px 55px;
   width: 50%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .advantages__list-item {
     width: 100%;
     padding-bottom: 45px;
@@ -1522,7 +1527,7 @@ button {
   padding: 0 15px 15px;
   width: 50%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .map__list-item {
     width: 100%;
     padding-bottom: 5px;
@@ -1542,11 +1547,22 @@ button {
   -webkit-box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.15);
 }
+.map__address-title {
+  font-family: "rubik-medium", sans-serif;
+  font-size: 24px;
+  color: #328cda;
+  padding: 0 0 12px;
+}
+.map__address-descr {
+  color: #2d2d2d;
+  font-family: "rubik-regular", sans-serif;
+  font-size: 16px;
+}
 
 .mobile {
   display: none;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .mobile {
     display: block;
   }
@@ -1557,7 +1573,7 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .desktop {
     display: none;
   }
@@ -1587,32 +1603,32 @@ button {
   padding-left: 40px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .no-wrap {
     -ms-flex-wrap: nowrap !important;
         flex-wrap: nowrap !important;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .mb-0 {
     margin-bottom: 0 !important;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .ml-a {
     margin-left: auto !important;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .mr-a {
     margin-right: auto !important;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .fxg2 {
     -webkit-box-flex: 2 !important;
         -ms-flex-positive: 2 !important;
@@ -1620,7 +1636,7 @@ button {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .pb-5 {
     padding-bottom: 5px !important;
   }

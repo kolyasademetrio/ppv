@@ -495,6 +495,12 @@ button {
   padding: 80px 0 90px;
   overflow: hidden;
 
+  &.m-secondary {
+    @include mobile {
+      display: none;
+    }
+  }
+
   @include tablet {
     padding-top: 95px;
     padding-bottom: 100px;
@@ -709,7 +715,7 @@ button {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
+    @include mobile {
       margin-left: -5px;
       margin-right: -5px;
     }
@@ -721,7 +727,7 @@ button {
     flex-grow: 1;
     width: 33.3333%;
 
-    @media (max-width: 768px) {
+    @include mobile {
       padding-left: 5px;
       padding-right: 5px;
     }
@@ -738,7 +744,7 @@ button {
 
     &.m-secondary,
     &.m-tertiary {
-      @media (max-width: 768px) {
+      @include mobile {
         flex-wrap: wrap;
 
         .price__row-item-title,
@@ -758,7 +764,7 @@ button {
       }
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       flex-wrap: wrap;
       padding: 10px;
 
@@ -785,7 +791,7 @@ button {
   }
 
   &__row-item-title {
-    @media (max-width: 768px) {
+    @include mobile {
       margin-top: auto;
       padding-bottom: 15px;
     }
@@ -799,11 +805,11 @@ button {
     font-family: $rubik-regular;
     font-size: 20px;
 
-    @media (max-width: 1200px) {
+    @include desktop {
       font-size: 18px;
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       text-align: center;
       font-size: 16px;
     }
@@ -813,7 +819,7 @@ button {
     font-family: $rubik-regular;
     font-size: 14px;
 
-    @media (max-width: 768px) {
+    @include mobile {
       text-align: center;
       font-size: 13px;
     }
@@ -825,12 +831,12 @@ button {
     color: $blue;
     padding: 0 0 0 35px;
 
-    @media (max-width: 1200px) {
+    @include desktop {
       font-size: 26px;
       padding-left: 20px;
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       text-align: center;
       padding-left: 0;
       font-size: 22px;
@@ -853,7 +859,7 @@ button {
   padding: 85px 0 0;
   overflow: hidden;
 
-  @media (max-width: 991px) {
+  @include tablet {
     padding-top: 105px;
   }
 
@@ -876,7 +882,7 @@ button {
       background-color: $blue;
       border-top-right-radius: 20px;
 
-      @media (max-width: 991px) {
+      @include tablet {
         right: auto;
         width: 80px;
         height: auto;
@@ -896,11 +902,11 @@ button {
       left: 0;
     }
 
-    @media (max-width: 1200px) {
+    @include desktop {
       left: -50px;
     }
 
-    @media (max-width: 991px) {
+    @include tablet {
       display: none;
     }
   }
@@ -913,7 +919,7 @@ button {
   &__title-wrap {
     padding: 0 0 25px 200px;
 
-    @media (max-width: 991px) {
+    @include tablet {
       padding-left: 100px;
       padding-bottom: 40px;
     }
@@ -927,7 +933,7 @@ button {
     padding: 50px 0 0 260px;
     position: relative;
 
-    @media (max-width: 991px) {
+    @include tablet {
       padding-left: 0;
       padding-top: 0;
       padding-bottom: 0;
@@ -937,7 +943,7 @@ button {
   &__slider-wrapper {
     position: relative;
 
-    @media (max-width: 991px) {
+    @include tablet {
       padding-bottom: 50px !important;
     }
   }
@@ -1033,7 +1039,7 @@ button {
     position: relative;
     height: 736px;
 
-    @media (max-width: 991px) {
+    @include tablet {
       height: 590px;
     }
   }
@@ -1069,13 +1075,13 @@ button {
     background: #328cda;
     background: linear-gradient(to right, #328cda 0%, transparent 100%);
 
-    @media (max-width: 991px) {
+    @include tablet {
       font-size: 18px;
       padding-left: 15px;
       padding-right: 10px;
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       font-size: 20px;
     }
   }
@@ -1147,7 +1153,7 @@ button {
     padding: 0 15px 55px;
     width: 50%;
 
-    @media (max-width: 768px) {
+    @include mobile {
       width: 100%;
       padding-bottom: 45px;
     }
@@ -1244,7 +1250,7 @@ button {
     padding: 0 15px 15px;
     width: 50%;
 
-    @media (max-width: 768px) {
+    @include mobile {
       width: 100%;
       padding-bottom: 5px;
     }
@@ -1265,6 +1271,19 @@ button {
     padding: 34px 30px 40px;
     box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.15);
   }
+
+  &__address-title {
+    font-family: $rubik-medium;
+    font-size: 24px;
+    color: $blue;
+    padding: 0 0 12px;
+  }
+
+  &__address-descr {
+    color: $base-text-color;
+    font-family: $rubik-regular;
+    font-size: 16px;
+  }
 }
 
 
@@ -1273,7 +1292,7 @@ button {
 .mobile {
   display: none;
 
-  @media (max-width: 991px) {
+  @include tablet {
     display: block;
   }
 }
@@ -1281,7 +1300,7 @@ button {
 .desktop {
   display: flex;
 
-  @media (max-width: 991px) {
+  @include tablet {
     display: none;
   }
 }
@@ -1311,37 +1330,37 @@ button {
 }
 
 .no-wrap {
-  @media (max-width: 991px) {
+  @include tablet {
     flex-wrap: nowrap !important;
   }
 }
 
 .mb-0 {
-  @media (max-width: 991px) {
+  @include tablet {
     margin-bottom: 0 !important;
   }
 }
 
 .ml-a {
-  @media (max-width: 991px) {
+  @include tablet {
     margin-left: auto !important;
   }
 }
 
 .mr-a {
-  @media (max-width: 991px) {
+  @include tablet {
     margin-right: auto !important;
   }
 }
 
 .fxg2 {
-  @media (max-width: 991px) {
+  @include tablet {
     flex-grow: 2 !important;
   }
 }
 
 .pb-5 {
-  @media (max-width: 991px) {
+  @include tablet {
     padding-bottom: 5px !important;
   }
 }
