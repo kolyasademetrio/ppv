@@ -1286,6 +1286,87 @@ button {
   }
 }
 
+.giftcard {
+  padding: 90px 0 75px;
+
+  @include mobile {
+    padding-top: 15px;
+    padding-bottom: 180px;
+  }
+
+  &__title-wrap {
+    padding: 0 0 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list-item {
+    padding: 0 15px 15px;
+
+    &.m-primary {
+      width: 50%;
+
+      @include mobile {
+        width: 100%;
+        order: 2;
+      }
+    }
+
+    &.m-secondary {
+      width: 50%;
+
+      @include mobile {
+        width: 100%;
+        order: 1;
+      }
+    }
+  }
+
+
+  &__gift-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 10px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ebebeb;
+    }
+  }
+
+  &__gift-item-inner {
+    font-size: 20px;
+    color: $base-text-color;
+    font-family: $rubik-medium;
+  }
+
+  &__gift-title {
+    position: relative;
+    left: -20px;
+  }
+
+  &__image-wrap {
+    padding: 160px 0 0;
+
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+}
+
 
 
 
