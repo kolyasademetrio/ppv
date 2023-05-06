@@ -239,6 +239,11 @@ button {
   width: 48px;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .header__img {
+    display: none;
+  }
+}
 .header__phone {
   font-size: 12px;
   color: #328cda;
@@ -247,7 +252,7 @@ button {
 }
 @media screen and (max-width: 550px) {
   .header__phone {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 .header__phone-link {
@@ -257,13 +262,13 @@ button {
 }
 @media screen and (max-width: 550px) {
   .header__phone-link {
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 10px;
   }
 }
 
 .main {
-  background: url("/images/main.jpg") center center;
+  background: url("../images/main.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 300px 0 175px;
@@ -272,7 +277,12 @@ button {
   .main {
     padding-top: 15px;
     padding-bottom: 255px;
-    background-image: url("/images/main-mobile.jpg");
+    background-image: url("../images/main-mobile.jpg");
+  }
+}
+@media screen and (max-width: 550px) {
+  .main {
+    background-image: url("../images/main-mobile-2.jpg");
   }
 }
 .main__btn-wrap.m-primary {
@@ -300,7 +310,7 @@ button {
 }
 @media screen and (max-width: 550px) {
   .main__title {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 .main__subtitle {
@@ -375,6 +385,11 @@ button {
   font-family: "rubik-regular", sans-serif;
   font-size: 36px;
   color: #2a70ae;
+}
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 34px;
+  }
 }
 .subtitle.center {
   text-align: center;
@@ -736,6 +751,7 @@ button {
 @media screen and (max-width: 991px) {
   .booking__title {
     text-align: center;
+    font-size: 46px;
   }
 }
 .booking__subtitle {
@@ -797,6 +813,7 @@ button {
   .booking__contacts-link {
     width: 100%;
     text-align: center;
+    font-size: 34px;
   }
 }
 .booking__form-wrap {
@@ -1467,6 +1484,13 @@ button {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .advantages__list-item-icon {
+    width: 95px;
+    height: 95px;
+    min-width: 95px;
+  }
+}
 .advantages__list-item-icon:before {
   content: attr(data-content);
   display: block;
@@ -1479,6 +1503,11 @@ button {
   opacity: 0.1;
   line-height: 1;
 }
+@media screen and (max-width: 768px) {
+  .advantages__list-item-icon:before {
+    font-size: 110px;
+  }
+}
 .advantages__list-item-icon-inner {
   position: relative;
   left: 5px;
@@ -1486,12 +1515,22 @@ button {
 .advantages__list-item-title-wrap {
   padding: 35px 0 0 18px;
 }
+@media screen and (max-width: 768px) {
+  .advantages__list-item-title-wrap {
+    padding-left: 8px;
+  }
+}
 .advantages__list-item-title {
   text-transform: uppercase;
   color: #2a70ae;
   font-size: 20px;
   font-family: "rubik-bold", sans-serif;
   padding: 0 0 2px;
+}
+@media screen and (max-width: 768px) {
+  .advantages__list-item-title {
+    font-size: 17px;
+  }
 }
 .advantages__list-item-subtitle {
   text-transform: uppercase;
@@ -1582,7 +1621,7 @@ button {
   display: block;
   width: 770px;
   height: 398px;
-  background: url("/images/giftcard.png") center center;
+  background: url("../images/giftcard.png") center center;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -1660,6 +1699,9 @@ button {
   display: block;
   width: 70px;
   height: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 70px;
   border-radius: 50%;
   background-color: #ebebeb;
 }
@@ -1975,6 +2017,12 @@ button {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .desktop-regular {
+    display: none;
+  }
+}
+
 .regular {
   font-family: "rubik-regular", sans-serif;
 }
@@ -1993,6 +2041,12 @@ button {
 
 .f-18 {
   font-size: 18px;
+}
+
+@media screen and (max-width: 991px) {
+  .fm-17 {
+    font-size: 17px;
+  }
 }
 
 .pl-40 {
