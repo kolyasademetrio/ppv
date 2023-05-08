@@ -90,6 +90,50 @@
   </div>
 </footer>
 <div class="icon-load"></div>
+<div class="popup js-popup">
+  <div class="popup__overlay"></div>
+  <div class="popup__inner">
+    <button class="popup__close js-popup-close">&#10006;</button>
+    <div class="popup__title">Bestil i dag</div>
+    <form action="" class="popup__form">
+      <div class="popup__row">
+        <input type="text" class="popup__field" name="name" required placeholder="Navn*">
+      </div>
+      <div class="popup__row">
+        <input type="text" class="popup__field" name="email" required placeholder="E-mail*">
+      </div>
+      <div class="popup__row">
+        <input type="text" class="popup__field" name="postnr" required placeholder="Post nr*">
+      </div>
+      <div class="popup__row">
+        <input type="text" class="popup__field" name="phone" required placeholder="Telefon*">
+      </div>
+      <div class="popup__row">
+        <input type="text" class="popup__field" name="address" required placeholder="Adresse*">
+      </div>
+      <div class="popup__row">
+        <select type="text" class="popup__field" name="servicetype">
+          <option value="1">Service 1</option>
+          <option value="2">Service 2</option>
+          <option value="3">Service 3</option>
+        </select>
+      </div>
+      <div class="popup__row">
+        <select type="text" class="popup__field" name="periodicity">
+          <option value disabled selected>Hvor tit skal kommer til dig?</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="popup__row popup__btn-row">
+        <button type="submit" class="btn popup__btn">
+          <div class="btn__inner">Sende</div>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 <script src="js/libs.js"></script>
 <script src="js/custom.js"></script>
 </body>
