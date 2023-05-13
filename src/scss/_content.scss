@@ -179,7 +179,21 @@ button {
       background-color: #fff;
 
       @include mobile {
-        display: block;
+        display: none;
+
+        &.sticky {
+          display: block;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 2;
+          width: 100vw;
+          background-color: #fff;
+          border-bottom: 1px solid $blue-dark;
+          padding-top: 15px;
+          padding-bottom: 20px;
+        }
       }
 
     }
@@ -1877,21 +1891,6 @@ body.withPopup {
   /* Firefox 18- */
   color: #000;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  width: 100vw;
-  background-color: #fff;
-  border-bottom: 1px solid $blue-dark;
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-
-
 
 .m-uppercase {
   text-transform: uppercase;

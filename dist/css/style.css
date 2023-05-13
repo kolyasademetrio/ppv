@@ -336,7 +336,20 @@ button {
 }
 @media screen and (max-width: 768px) {
   .main__btn-wrap.m-primary {
+    display: none;
+  }
+  .main__btn-wrap.m-primary.sticky {
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100vw;
+    background-color: #fff;
+    border-bottom: 1px solid #2a70ae;
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
 }
 .main__content {
@@ -2193,19 +2206,6 @@ body.withPopup {
 :-moz-placeholder {
   /* Firefox 18- */
   color: #000;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  width: 100vw;
-  background-color: #fff;
-  border-bottom: 1px solid #2a70ae;
-  padding-top: 15px;
-  padding-bottom: 20px;
 }
 
 .m-uppercase {
