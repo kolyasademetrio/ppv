@@ -657,7 +657,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 1100px) {
   .services__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -673,9 +673,8 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 320px;
 }
-@media screen and (max-width: 991px) {
+@media (max-width: 1100px) {
   .services__row-item {
     width: 50%;
   }
@@ -683,45 +682,30 @@ button {
 @media screen and (max-width: 550px) {
   .services__row-item {
     width: 100%;
-    height: 260px;
   }
 }
 .services__row-item-inner {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .services__row-item-img-wrap {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  border-radius: 13px;
-}
-.services__row-item-img-wrap:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: url("../images/gradient.png") center center no-repeat;
-  background-size: 100% 100%;
+  height: 0;
+  padding-top: 120.9%;
 }
 .services__row-item-img {
-  max-width: 100%;
-  aspect-ratio: 2/5;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .services__row-item-content {
-  position: relative;
-  padding: 0 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 5px 10px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
