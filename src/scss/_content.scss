@@ -1783,7 +1783,7 @@ body.withPopup {
     width: 375px;
     transform: translate(-50%, 0);
     border-radius: 25px;
-    padding: 40px 22px 40px;
+    padding: 30px 22px 30px;
     z-index: 2;
     max-height: 100vh;
     display: flex;
@@ -1791,8 +1791,8 @@ body.withPopup {
 
     @media (min-width: 768px) {
       top: 40px;
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 30px;
+      padding-bottom: 30px;
       padding-right: 30px;
       padding-left: 30px;
     }
@@ -1803,7 +1803,7 @@ body.withPopup {
     color: $blue-dark;
     font-size: 36px;
     font-family: $rubik-bold;
-    padding: 0 0 30px;
+    padding: 0 0 15px;
   }
 
   &__close {
@@ -1833,8 +1833,8 @@ body.withPopup {
 
   &__field {
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 48px;
+    line-height: 48px;
     border-radius: 10px;
     background-color: #f3f3f3;
     font-family: $rubik-regular;
@@ -1857,11 +1857,11 @@ body.withPopup {
   }
 
   &__btn-row {
-    padding-top: 20px;
+    // padding-top: 15px;
 
-    @media (min-width: 768px) {
-      padding-top: 40px;
-    }
+    // @media (min-width: 768px) {
+    //   padding-top: 15px;
+    // }
   }
 
   &__btn {
