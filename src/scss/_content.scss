@@ -1058,6 +1058,8 @@ button {
 
   &__slider-item-img-wrap {
     padding: 0 20px 0 0;
+    flex-shrink: 0;
+    flex-grow: 0;
   }
 
   &__slider-item-img {
