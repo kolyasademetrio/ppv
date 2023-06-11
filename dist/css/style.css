@@ -2124,8 +2124,8 @@ body.withPopup {
   .popup__inner {
     top: 40px;
     padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     padding-left: 30px;
   }
 }
